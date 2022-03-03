@@ -12,7 +12,7 @@ const { jobs } = db.data
 export default (app) => {
 
   app.get(`/api/jobs`, async (req, res) => {
-    const jobsFilter =  jobs.filter(job=> job.tags.includes(req.query.filter))
+    const jobsFilter =  req.query.filter?jobs.filter(job=> job.tags.includes(req.query.filter)):jobs
     return res.status(200).send(jobsFilter);
   });
 

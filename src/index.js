@@ -4,12 +4,18 @@ import jobRouter from './routes/job.mjs';
 
 const app = express();
 
+
+
 app.use(bodyParser.json());
 
 app.get(`/`, async (req, res) => {
   return res.status(200).send("hola Mundo");
 });
+try {
 jobRouter(app);
+}catch(e){
+  console.log(e);
+}
 
 
 const PORT = process.env.PORT || 5000;
