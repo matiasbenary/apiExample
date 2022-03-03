@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "jobPosition": "Ssr Frontend react",
+      "entity": "Grupo Front",
+      "tags": "HTML,JS,CSS,REACT",
+      "id": "VXJ4H7yzP"
+    },
+    {
+      "jobPosition": "JR Frontend react",
+      "entity": "Grupo Front",
+      "tags": "JS,CSS",
+      "id": "x1slT8iHP"
+    },
+    {
+      "jobPosition": "JR Frontend react",
+      "entity": "Grupo Front",
+      "tags": "HTML,JS,CSS",
+      "id": "PQ4B_w9Fi"
+    },
+    {
+      "jobPosition": "JR Frontend react",
+      "entity": "Grupo Front",
+      "tags": "HTML,JS,CSS",
+      "id": "7lpU7OSoI"
+    }
+  ]
+}
