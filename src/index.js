@@ -5,6 +5,10 @@ import jobRouter from './routes/job.mjs';
 const app = express();
 
 app.use(bodyParser.json());
+
+app.get(`/`, async (req, res) => {
+  return res.status(200).send("hola Mundo");
+});
 jobRouter(app);
 
 
