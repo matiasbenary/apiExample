@@ -17,6 +17,13 @@ export default (app) => {
     return res.status(200).send(jobsFilter);
   });
 
+  app.get(`/api/jobs/:id`, async (req, res) => {
+    const id = req.params.id;
+    const job = jobs.find((job) => job.id===id)
+
+    return res.status(200).send(job);
+  });
+
   app.post(`/api/jobs`, async (req, res) => {
     const { jobPosition, entity, tags } = req.body;
     
